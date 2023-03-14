@@ -49,15 +49,15 @@
     
               <div class="col-1 d-flex">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                  <button type="button" class="btn btn-sm">1</button>
-                  <button type="button" class="btn btn-sm">2</button>
-                  <button type="button" class="btn btn-sm">3</button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">1</button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">2</button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">3</button>
                 
                   <div class="btn-group" role="group">
                     <button type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       4
                     </button>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-start">
                       <li><a class="dropdown-item" href="#">Dropdown link</a></li>
                       <li><a class="dropdown-item" href="#">Dropdown link</a></li>
                     </ul>
@@ -75,7 +75,24 @@
   
     <!-- MAIN -->
     <div class="mb-content-wrapper debug">
+      <div class="container-fluid gx-0 h-100">
+        <div class="row w-100 h-100 gx-0">
+          <div class="col-1 h-100 mb-sidenav debug">
+            <div class="d-flex flex-column h-100">
+              <button type="button" class="btn btn-sm">Button</button>
+              <button type="button" class="btn btn-sm">Button</button>
+              <button type="button" class="btn btn-sm mb-auto">Button</button>
+              <button type="button" class="btn btn-sm mb-4">Button</button>                
+            </div>
+          </div>
 
+          <div class="col-11 debug mb-dashboard">
+            <div class="row mb-dash-nav"></div>
+            <div class="row mb-dash-content overflow-y-auto"></div>
+          </div>
+        </div>
+
+      </div>
     </div>
 
   </div>
