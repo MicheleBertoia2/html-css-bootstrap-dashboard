@@ -25,3 +25,20 @@ img {
 .mb-content-wrapper {
   height: calc(100% - 80px);
 }
+
+/* dashboard uppernav with offcanvas */
+.mb-dash-nav {
+  height: 100px;
+}
+/* <!-- dash content --> */
+.mb-dash-content {
+  height: calc(100vh - 180px);
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:768px){
+
+  .mb-dashboard .mb-dash-nav .offcanvas.offcanvas-end {
+  width: 100%;
+  }
+}
