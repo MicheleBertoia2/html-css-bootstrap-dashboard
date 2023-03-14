@@ -1,0 +1,27 @@
+.debug {
+  min-height: 50px;
+  background-color: rgba(0, 0, 255, 0.311);
+  border: 1px solid black;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mb-main-wrapper {
+  height: 100vh;
+}
+
+/* UPPER NAV */
+
+.mb-upper-nav {
+  height: 80px;
+}
+
+/* MAIN */
+
+.mb-content-wrapper {
+  height: calc(100% - 80px);
+}
