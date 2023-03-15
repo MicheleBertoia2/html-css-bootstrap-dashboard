@@ -44,6 +44,16 @@ img {
 
 .mb-sidenav {
   width: 130px;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: #051e34;
+}
+
+.mb-sidenav .btn-dark {
+  background-color:transparent;
+  border: none;
+}
+.mb-sidenav .btn-dark:hover{
+  background-color: var(--bs-btn-hover-bg)
 }
 
 .mb-dashboard {
@@ -70,6 +80,10 @@ img {
   
 .mb-sidenav {
   width: 50px;
+}
+
+.mb-sidenav span {
+  display: none;
 }
 
 .mb-dashboard {
