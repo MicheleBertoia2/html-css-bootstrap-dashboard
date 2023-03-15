@@ -26,7 +26,7 @@
   
       <div class="container-fluid h-100">
     
-        <nav class="navbar bg-white h-100 fixed">
+        <nav class="navbar bg-white fixed-top">
     
           <div class="container-fluid">
             <div class="row w-100 h-100">
@@ -115,7 +115,7 @@
               <nav class="navbar">
                 <div class="container-fluid">
 
-                  <a class="navbar-brand text-white w-25" href="#">
+                  <a class="navbar-brand text-white" href="#">
                     <div class="fs-3">
                       Boolean
                       <span class="badge rounded-pill text-bg-primary fs-6">Piano Blaze</span>
@@ -147,35 +147,79 @@
                   <!-- form offcanvas -->
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Inserisci un nuovo studente</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      
+                      <form class="row g-3 mb-form">
+                        <div class="col-md-6">
+                          <label for="name" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="surname" class="form-label">Cognome</label>
+                          <input type="text" class="form-control" id="surname">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="Email" class="form-label">Email</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="Email">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="Password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="Password">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="VerifyEmail" class="form-label">Verifica Email</label>
+                          <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="VerifyEmail">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="VerifyPassword" class="form-label">Verifica Password</label>
+                          <input type="password" class="form-control" id="VerifyPassword">
+                        </div>
+                        <div class="col-12">
+                          <label for="Address" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="Address">
+                        </div>                       
+                        <div class="col-md-6">
+                          <label for="City" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="City">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="State" class="form-label">Stato</label>
+                          <select id="State" class="form-select">
+                            <option selected>Scegli...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="Zip" class="form-label">CAP</label>
+                          <input type="text" class="form-control" id="Zip">
+                        </div>
+                        <div class="col-12">
+                          <label for="File" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="File">
+                        </div>                        
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              Seleziona per proseguire
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="submit" class="btn btn-warning">Svuota</button>
+                        </div>
                       </form>
+                      
                     </div>
                   </div>
                 </div>

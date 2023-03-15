@@ -72,7 +72,6 @@ img {
 
 /* dashboard uppernav with offcanvas */
 .mb-dash-nav {
-  height: 100px;
   background-color: #1b72e8;
 }
 
@@ -88,9 +87,14 @@ img {
   background-color: #165bba !important;
 }
 
+.mb-form .form-control,
+.mb-form .form-select {
+  background-color: white;
+}
+
 /* <!-- dash content --> */
 .mb-dash-content {
-  height: calc(100vh - 180px);
+  height: calc(100vh - 80px);
 }
 
 /* prossime classi */
