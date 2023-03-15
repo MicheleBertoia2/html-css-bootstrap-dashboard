@@ -87,15 +87,19 @@ img {
 
 /* prossime classi */
 
-.next-class h2 {
+.next-class h3,
+.faq h3,
+.to-do h3,
+.activities h3 {
   background-color: #e5e5e5;
-  border-color: none;
 }
 
 .next-class .mb-table img {
   height: 1.5rem;
   width: 1.5rem;
 }
+
+/* faq */
 
 /*RESPONSIVE*/
 @media screen and (max-width:768px){
