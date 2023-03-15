@@ -1,3 +1,9 @@
+:root {
+  --bs-form-control-bg: #e5e5e5;
+  --bs-tertiary-bg: #e5e5e5
+}
+
+
 .debug {
   min-height: 50px;
   background-color: rgba(0, 0, 255, 0.311);
@@ -20,16 +26,39 @@ img {
   height: 80px;
 }
 
+.form-control:focus{
+  box-shadow: none;
+  border-color: #e5e5e5;
+}
+
+.mb-upper-nav .mb-dropdown.dropdown-menu[data-bs-popper] {
+  left: -130px;
+}
+
+
 /* MAIN */
 
 .mb-content-wrapper {
   height: calc(100% - 80px);
 }
 
+.mb-sidenav {
+  width: 130px;
+}
+
+.mb-dashboard {
+  width: calc(100% - 130px);
+}
+
 /* dashboard uppernav with offcanvas */
 .mb-dash-nav {
   height: 100px;
 }
+
+.mb-dash-nav .offcanvas {
+  --bs-offcanvas-width: 768px;
+}
+
 /* <!-- dash content --> */
 .mb-dash-content {
   height: calc(100vh - 180px);
@@ -37,6 +66,15 @@ img {
 
 /*RESPONSIVE*/
 @media screen and (max-width:768px){
+
+  
+.mb-sidenav {
+  width: 50px;
+}
+
+.mb-dashboard {
+  width: calc(100% - 50px);
+}
 
   .mb-dashboard .mb-dash-nav .offcanvas.offcanvas-end {
   width: 100%;

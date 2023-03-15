@@ -26,10 +26,10 @@
   
       <div class="container-fluid h-100">
     
-        <nav class="navbar bg-body-tertiary h-100">
+        <nav class="navbar bg-white h-100 fixed">
     
           <div class="container-fluid">
-            <div class="row w-100">
+            <div class="row w-100 h-100">
     
               <div class="col-1">
                 <a class="navbar-brand" href="#">
@@ -38,26 +38,34 @@
                 </a>
               </div>
     
-              <div class="col-10">
+              <div class="col-10 pt-2">
                 <form>
-                      <div class="input-group">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      <div class="input-group mb-search-bar">
+                        <span class="input-group-text" id="basic-addon1">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                       </div>
                 </form>
               </div>
     
               <div class="col-1 d-flex">
                 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-                  <button type="button" class="btn btn-sm d-none d-lg-block">1</button>
-                  <button type="button" class="btn btn-sm d-none d-lg-block">2</button>
-                  <button type="button" class="btn btn-sm d-none d-lg-block">3</button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">
+                    <i class="fa-solid fa-circle-question"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm d-none d-lg-block">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </button>
                 
                   <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                      4
+                    <button type="button" class="btn btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-bell text-warning"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-start">
+                    <ul class="dropdown-menu mb-dropdown">
                       <li><a class="dropdown-item" href="#">Dropdown link</a></li>
                       <li><a class="dropdown-item" href="#">Dropdown link</a></li>
                     </ul>
@@ -79,7 +87,7 @@
     <div class="container-fluid gx-0 h-100">
       <div class="row w-100 h-100 gx-0">
           <!-- sidenav -->
-          <div class="col-1 h-100 mb-sidenav debug">
+          <div class="h-100 mb-sidenav debug">
             <div class="d-flex flex-column h-100">
               <button type="button" class="btn btn-sm">Button</button>
               <button type="button" class="btn btn-sm">Button</button>
@@ -88,7 +96,7 @@
             </div>
           </div>
 
-          <div class="col-11 debug mb-dashboard">
+          <div class="debug mb-dashboard">
             <!-- dashboard uppernav with offcanvas -->
             <div class="row mb-dash-nav gx-0">
               <nav class="navbar bg-body-tertiary">
