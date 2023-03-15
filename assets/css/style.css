@@ -34,6 +34,11 @@ img {
 
 .mb-upper-nav {
   height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .form-control:focus{
@@ -49,7 +54,8 @@ img {
 /* MAIN */
 
 .mb-content-wrapper {
-  height: calc(100% - 80px);
+  height: 100%;
+  margin-top: 80px;
 }
 
 .mb-sidenav {
