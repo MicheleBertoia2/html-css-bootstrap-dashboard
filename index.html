@@ -109,15 +109,20 @@
             </div>
           </div>
 
-          <div class="debug mb-dashboard">
+          <div class="mb-dashboard">
             <!-- dashboard uppernav with offcanvas -->
             <div class="row mb-dash-nav gx-0">
-              <nav class="navbar bg-body-tertiary">
+              <nav class="navbar">
                 <div class="container-fluid">
+
                   <a class="navbar-brand" href="#">Offcanvas navbar</a>
+
+                  <div class="debug">hghjsadg</div>
+
                   <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                   </button>
+                  <!-- form offcanvas -->
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                       <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -157,14 +162,201 @@
 
             <!-- dash content -->
             <div class="row mb-dash-content overflow-y-auto gx-0">
-              <div class="col-lg-6 debug">
+              <div class="col-lg-8 p-2">
+
                 <!-- prossime classi -->
-                <section class="next-class debug">next class</section>
+                <section class="next-class border border-dark rounded">
+                  <h2 class="p-2 border border-dark rounded-top">Prossime classi</h2>
+                  <div class="mb-table p-2">
+                    <table class="table table-hover px-1">
+                      
+                      <tbody>
+                        <tr>
+                          <td class="w-60">Nome</td>
+                          <td class="text-center d-none d-md-block">Data inizio</td>
+                          <td class="text-center">ROI</td>
+                          <td class="text-center">Stato</td>
+                          <td class="text-center">Azioni</td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 75</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">15 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 76</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">16 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 77</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">17 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-warning">Process</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 78</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">18 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 79</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">19 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-danger">Failed</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 80</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">20 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 81</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">21 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-danger">Failed</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+
+                        <tr class="lh-lg">
+                          <td class="w-60">
+                            <img class="align-middle" src="assets/img/class-avatar.jpg" alt="html">
+                            <span class="pt-3">Classe 82</span>
+                          </td>
+                          <td class="text-center d-none d-md-block pb-4 ">22 febbraio 2021</td>
+                          <td class="text-center">20%</td>
+                          <td class="text-center">
+                            <span class="badge text-bg-success">Done</span>
+                          </td>
+                          <td class="text-center pb-3">
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+
+                            <button type="button" class="btn btn-outline-secondary btn-sm">
+                              <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                          </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
+
                 <!-- faq -->
                 <section class="faq debug"> faq</section>
               </div>
 
-              <div class="col-lg-6 debug">
+              <div class="col-lg-4 debug">
                 <!-- to do list -->
                 <section class="to-do debug">to do</section>
                 <!-- utenze attive -->
