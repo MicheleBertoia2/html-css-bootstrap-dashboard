@@ -76,8 +76,16 @@ img {
   background-color: #1b72e8;
 }
 
+.mb-dash-nav .add-student .navbar-toggler {
+  border-color: white !important;
+}
+
 .mb-dash-nav .offcanvas {
   --bs-offcanvas-width: 768px;
+}
+
+.mb-dash-nav .text-bg-primary {
+  background-color: #165bba !important;
 }
 
 /* <!-- dash content --> */
